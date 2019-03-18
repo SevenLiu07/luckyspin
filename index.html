@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>vueproject</title>
   </head>
-  <body>
+  <body style="background: #6A52CE">
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="./static/js/jquery-1.10.2.js"></script>
+    <script src="./static/js/awardRotate.js"></script>
+    <script src="./static/js/lukyspin.js"></script>
+    <script>
+    //页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
+    window.onload=function(){
+        drawRouletteWheel();
+    }
+    </script>
   </body>
 </html>
