@@ -1,4 +1,4 @@
-var turnplate={
+var turnplate = {
     restaraunts:[],				//大转盘奖品名称
     colors:[],					//大转盘奖品区块对应背景颜色
     outsideRadius:192,			//大转盘外圆的半径

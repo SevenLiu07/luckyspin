@@ -17,4 +17,5 @@ service.interceptors.request.use(config => {
   console.log('err' + error) // for debug
   return Promise.reject(error)
 })
+
 export default service

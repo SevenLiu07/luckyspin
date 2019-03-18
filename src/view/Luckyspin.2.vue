@@ -9,13 +9,16 @@
             </div>
         </div>
         <div>
+        {{rewardList}}
         </div>
     </div>
 </template>
 <script>
-    export default {
+import api from '../utils/api.js'
+export default {
     data () {
         return {
+            rewardList: ''
         }
     },
     mounted () {
@@ -23,9 +26,15 @@
     },
     methods: {
         getRewards () {
-            this.$http.get("../../static/lukyspin.json").then(response => {
-                console.log(response.data)
-            });
+            api.getRewardList({
+                version : Math.random()
+            }).then(res => {
+                if(res){
+                    if(res.data.state === 1){
+                        console.log(res.data)
+                    }
+                }
+            })
         }
     }
 }

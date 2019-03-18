@@ -1,0 +1,32 @@
+{
+    "result":{
+        "code":200,
+        "msg":"操作成功"
+    },
+    "data":{
+        "index":2,
+        "prize":[
+            {
+                "id":1,
+                "prize":"iPhone XS Max",
+                "image":null,
+                "rate":1,
+                "stock":1
+            },
+            {
+                "id":2,
+                "prize":"小米手机",
+                "image":null,
+                "rate":1,
+                "stock":1
+            },
+            {
+                "id":3,
+                "prize":"谢谢惠顾",
+                "image":null,
+                "rate":98,
+                "stock":10000
+            }
+        ]
+    }
+}
